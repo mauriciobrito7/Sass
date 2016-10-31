@@ -1,0 +1,27 @@
+/*
+	Adición o concatenación : +
+	Restar: - (poner espacios entre los operandos)
+	División
+	Multiplicación *
+	Modulo (resto de una división ) %
+	Comparaciones (>,<,>=,<=,==,!=)
+	Operadores lógicos (and, or)
+*/
+
+.div{
+	$a: 5px;
+	$b: 3px;
+	$c:($a - $b);
+	type: type-of($c);
+	width: $c;
+	font: #{$a * 2} / #{$b};
+}
+
+.div2{
+	$a: 5px;
+	@if type-of($a) == number {
+		type:type-of($a);	
+	} @else{
+		type: Not a number;
+	}
+}

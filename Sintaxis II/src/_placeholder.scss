@@ -1,0 +1,32 @@
+// Placeholder
+/*
+	Crea un bloque de declaraciones pero que no se compila a nada
+	es util para guardar ciertos elementos o estilos para cuando
+	los necesites
+*/
+%placeholder{
+	width: 20px;
+	height: 100px;
+	background: yellow;
+}
+
+.banner{
+	@extend %placeholder;
+}
+
+.banner-2{
+	@extend %placeholder;
+}
+
+/*
+	La ventaja principal de un placeholder es usar placeholder por encima
+	de los mixin sin el contenido no va a variar
+*/
+@mixin placeholder2($color){
+	background: $color;
+}
+
+.banner-3{
+	@extend %placeholder;
+	@include placeholder2(red);
+}

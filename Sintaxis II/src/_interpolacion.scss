@@ -1,0 +1,15 @@
+
+//Se usa para construir expresiones con el valor de una variable
+
+//Se encierra la variable entre #{ } 
+
+$var:2;
+$company:youtube;
+
+.div-#{$company}:nth-child(#{$var}){
+	background: red;
+	&::before{
+		content:"Bienvenido a #{$company}"
+	}
+	
+}

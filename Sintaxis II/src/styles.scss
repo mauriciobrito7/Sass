@@ -1,0 +1,28 @@
+//--------------------ANIDAMIENTO DE PROPIEDADES------------------//
+/*Para decir que es una propiedad y no un selector ponemos : */
+$w:400px;
+$h:$w*0.75;
+.banner{
+	$w:400px;
+	$h:$w*0.75;
+	width: $w;
+	height: $h;
+	background: {
+		image: url(fondo.jpg),
+				url(casa.png),
+				url(arbol.jpg);
+		size: cover, //para la primera imagen (fondo)
+			  $w *0.5, //para la segunda imagen (casa)
+			  $w *0.1;//para la tercera imagen (arbol)
+		repeat: no-repeat;
+	}
+	animation: {
+		name: flotar;
+		duration: 2s;
+		timing-function: linear;
+	}
+}
+@import "_tiposDeDatos";
+@import "_operaciones";
+@import "_interpolacion";
+@import "_placeholder";

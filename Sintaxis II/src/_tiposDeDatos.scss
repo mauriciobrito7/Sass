@@ -1,0 +1,130 @@
+/*
+Sass tiene 7 tipos de datos:
+	Numeros
+	Strings
+	Colores
+	Booleans
+	Null
+	Lists
+	Maps
+*/
+
+//NUMEROS
+/*Para Sass un número seguido de caracteres sigue siendo numeros
+100px
+5em
+10deg
+20dkdskfsd
+*/
+
+.data-number{
+	$var:100sdjfjsdfjsd;
+	type: type-of($var);//type-of te muestra el tipo de dato
+	value:$var;	
+}
+
+//STRINGS
+/*En Sass pueden ser entre comillados o no
+*/
+.data-string{
+	$var: 'red'; // si se agrega (hola mundo) sin las comillas seria una lista no un string 
+	type: type-of($var);//type-of te muestra el tipo de dato
+	value:unquote($var); //quita las comillas
+}
+//Si tu sumas un string con un número lo vas a concatenar
+/*
+.data-string{
+	$var:100 + 'px'; //seria "100px" y como atributo estaria mal
+	type: type-of($var);
+	value:$var;
+}*/
+
+.data-string{
+	//$number:100;
+	//$numberUnit: $number *1px;
+	//width:$numberUnit/2; 50px
+
+	//INTERPORLAR LA VARIABLE PARA USAR CALC()
+	$var:100 + px;
+	type: type-of($var);
+	value: calc(#{$var}/20); //5
+}
+//COLORES
+/*Entiende los colores ya sea con palabras claves rgb rgba hexadecimales*/
+.data-color{
+	$var:red;
+	type: type-of($var);//color
+	value:$var;	
+}
+//BOOLEANS
+.data-bool{
+	$var:10>5;
+	type: type-of($var);//true
+	value:$var;	
+}
+//Null
+/*
+Se usa cuando se crea un mixin o una función con un parametro opcional
+*/
+.data-bool{
+	$var:null; //nulo
+	type: type-of($var);//ni si quiera se imprime
+	value:$var;	
+}
+/*Supongamos*/
+@mixin box($w:null){// Si no tuviera la asignación null el mixin 
+// va a pedir si o si el parametro pero con el null no salta error
+	width:$w;
+	//mas codigo
+}
+
+//List
+/*
+	Son equivalentes a los arrays en los demas lenguajes de programación
+	con un conjunto de valores que pueden separarse por comas o por espacios
+*/
+.data-list{
+	$var:1 2 3; //1 2 3
+	type: type-of($var);//list
+	value:$var;
+	length:length($var);//3
+	first-value: nth($var,1);
+	second-value: nth($var,2);	
+		
+}
+
+.data-list{
+	$var:Hola mundo,; //Hola mundo
+	type: type-of($var);//list
+	value:$var;
+	length:length($var);//1	
+}
+
+//Maps
+/*
+	Nos permite agrupar valores como si fuera un diccionario
+*/
+.data-map{
+	$networks-colors: (
+    twitter: #51aff8,
+    facebook: #2956a3,
+    linkedin: #0076b8,
+    youtube: #ce1312
+);
+	type: type-of($networks-colors);
+	//obtener valor de un mapa map-get
+	value:map-get($networks-colors,twitter);
+
+	@at-root .social-button{ //social va referir a la clave y el color al valor
+		@each $social, $color in
+		$networks-colors{
+			&.#{$social}{
+				/*Generará clases con el nombre del padre seguido del nombre de la
+				clave del mapa para crear una nueva clase y tendra un atributo distinto por
+				cada valor del mapa*/
+				background-color:$color;
+			}
+		}
+	}
+}
+

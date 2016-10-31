@@ -1,0 +1,63 @@
+.banner{
+  width:400px;
+  height:300px;
+  background-image:url(fondo.jpg),url(casa.png),url(arbol.jpg);
+  background-size:cover,200px,40px;
+  background-repeat:no-repeat;
+  -webkit-animation-name:flotar;
+          animation-name:flotar;
+  -webkit-animation-duration:2s;
+          animation-duration:2s;
+  -webkit-animation-timing-function:linear;
+          animation-timing-function:linear; }
+.data-number{
+  type:number;
+  value:100sdjfjsdfjsd; }
+.data-string{
+  type:string;
+  value:red;
+  value:5px; }
+.data-color{
+  type:color;
+  value:red; }
+
+.data-bool{
+  type:bool;
+  value:true;
+  type:null; }
+.data-list{
+  type:list;
+  value:1 2 3;
+  length:3;
+  first-value:1;
+  second-value:2;
+  value:Hola mundo;
+  length:1; }
+.data-map{
+  type:map;
+  value:#51aff8; }
+  .social-button.twitter{
+    background-color:#51aff8; }
+  .social-button.facebook{
+    background-color:#2956a3; }
+  .social-button.linkedin{
+    background-color:#0076b8; }
+  .social-button.youtube{
+    background-color:#ce1312; }
+.div{
+  width:2px;
+  font:10px/3px; }
+
+.div,.div2{
+  type:number; }
+
+.div-youtube:nth-child(2){
+  background:red; }
+  .div-youtube:nth-child(2):before{
+    content:"Bienvenido a youtube"; }
+.banner,.banner-2,.banner-3{
+  width:20px;
+  height:100px;
+  background:#ff0; }
+.banner-3{
+  background:red; }
