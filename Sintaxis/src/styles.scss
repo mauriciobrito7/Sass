@@ -1,0 +1,133 @@
+/*Variables
+	Las variables se declaran con el signo de $
+	Las variables también tienen scope
+*/
+
+//VARIABLES GLOBALES
+$main-size:5;
+//Se puede recorrer con un ciclo esta lista es como un arrary
+$main-border: 1px solid red;
+
+p{
+	//variable local
+	$bg-color:yellow;
+	order:$main-size*2;
+	border:$main-border;
+}
+
+//-----------------------------------------------------------//
+
+$main-color:yellow;
+body{
+	$main-color:red;
+	//background: $main-color; --rojo--
+	/*Hay un flag en sass que es !default lo que hace es decirle al compilador
+	si existe esta variable no me la sobreescribas y tomala por defecto sino existiera definela 
+	*/
+	$main-color:blue !default;
+	/* Y !global sobreescribe la variable global
+		$main-color:red !global;
+	*/	
+	background:$main-color;// --rojo--
+}
+
+div{
+	background: $main-color;//yellow
+}
+
+//---------------------------------ANIDAMIENTO----------------------------------------//
+/*Evita a toda costa los selectores descendientes*/
+h2{
+	+ p{//selector hermano 
+		color: red;
+	}
+	> a{
+		text-transform: uppercase;
+	}
+}
+
+/* El uso de & para repetir al selector padre */
+.button{
+	display: inline-block;
+	background: red;
+	&:hover{
+		background: green;
+	}
+	&::after{
+		content: ".00";
+	}
+}
+//BEM - Bloque/ Elemento/ Modificador
+.menu{
+	$font-size:1rem;
+	display: table;
+	&__item{
+		font-size:$font-size;
+	}
+	&__link{
+		font-weight: bold;
+	}
+	//Modificador
+	&--secondary{
+		font-size:$font-size*0.8;
+	}
+}
+
+.widget{
+	margin:0;
+	footer &{
+		margin-top:1em;
+	}
+}
+
+//Repetir al padre y a sus hijos
+.menu2{
+	&, ul{ //.menu2, .menu2 ul
+		list-style: none;
+	}
+
+}
+//Interporlar el selector padre 
+.button2{
+	color: green;
+	a#{&}{  // .button2 a.button2
+		color:red;
+	}
+}
+
+.menu3{
+	$menu-bg:blue;
+	background: $menu-bg;
+	/*ponemos como hijo el icono más no es un hijo de menu3 con @at-root aprovechamos 
+	las variables del scope del padre al compilar lo hará por fuera del padre
+	*/
+	@at-root .icon-menu{
+		color: $menu-bg;
+	}
+}
+//----------IMPORTS-------------------------------------------//
+//Los import para importar un archivo scss externo
+@import "_importado";
+/*Podemos tener partials que son archivos que no se van a compilar
+agrengando _ al nombre del archivo que no se va a compilar por ejemplo _importado.scss
+*/
+
+div{
+	background:$color; //variable importada desde importado.scss
+}
+
+//----------EXTENDS-------------------------------------------//
+/*Nos permite extender los estilos de una clase similar a heredar, pero 
+puede tener un grave problema que al extender las propiedades de su padre
+y este incluya anidaciones de sus hijos va a crear en la extension hijos heredados*/
+/*Lo correcto es usar la metodologia BEM en la clase padre para que este problema no ocurra*/
+
+.menu4{
+	background: yellow;
+	font-size: .9em;
+	display: flex;
+}
+.menu--secondary{
+	@extend .menu4;
+	flex-direction: column;
+}
