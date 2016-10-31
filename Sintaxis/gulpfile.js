@@ -48,19 +48,25 @@ let postCssPlugins=[
 gulp.task('styles', ()=>{
 
 	gulp.src('./src/*.scss')
-	.pipe(sass())//tarea sass
+	.pipe(sass().on('error', sass.logError))//tarea sass
 	.pipe(postCss(postCssPlugins))//tarea postcss
-	.pipe(gulp.dest('./dist'));
+	.pipe(gulp.dest('./dist'))
+	.pipe(browserSync.stream());
 });
 
 gulp.task('default',() =>{
-	
-	gulp.watch('./src/*.scss',['styles'])
-	//gulp.watch('./src/*.css',['styles'])
-	
+
 	//Servidor y recarga automatica
 	browserSync.init({
         server: "./"
     });
+
+	//gulp.watch('./dist/*.css',['styles'])
+    gulp.watch("./src/*.scss", ['styles']);
+    gulp.watch("./src/components/*.scss", ['sass']);
+    gulp.watch("./*.html").on('change', browserSync.reload);
+    gulp.watch("./js/*.js").on('change', browserSync.reload);
+	
+
 	}
 );
