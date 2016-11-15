@@ -1,0 +1,75 @@
+/*
+Un Mixin nos ayuda a reutilizar código con la ventaja de que podemos irlo modificando
+crear un patrón y a ese patrón hacerle modificaciones cada vez que lo llamemos
+*/
+//Definición de un mixin
+/*
+Los parametros por defecto van en ultimo
+*/
+@mixin button($lh, $font-size,$display:inline-block){
+	display: $display;
+	line-height: $lh;
+	padding: 0 1em;
+	font-size: $font-size;
+}
+//usarlo
+.button{
+	//también podría ser
+	//@include button($lh:50,$font-size:150em);
+	/*
+		Es una buena idea poner el nombre de los parametros para 
+		identificarlos rapidamente
+	*/
+	@include button(3,1em);
+	&.small{
+		@include button(2.5,0.8em);
+	}
+}
+/*
+.widget{
+	@include widget($padding:1em,$bg-color:red, $text-color:blue, $margin:10px,
+	$font-size:.8em, $header-font:sans-serif, $header-display:table);
+}*/
+
+//Los mixins pueden contener selectores
+@mixin widget($padding,$header-font,$header-color){
+  display: block;
+  padding: $padding;
+  @at-root{
+    header#{&}  {
+      font-family: $header-font;
+      color: $header-color;
+    }
+  }
+}
+.widget{
+	@include widget(1em,Arial,blue);
+}
+//También se puede definir un mixin que reciba cualquier numero de argumentos
+@mixin multiple($box-shadow...){
+	box-shadow:$box-shadow;
+}
+$shadows:1px solid red, 2px solid blue, 5px solid yellow;
+.box{
+	@include multiple($shadows);
+}
+
+// Pasar contenido al mixin
+/*
+Cada vez que se ponga @content significa que ahí se podría crear
+un nuevo bloque de declaración de CSS
+*/
+@mixin menu(){
+  list-style: none;
+  @content;
+}
+
+.menu {
+  @include menu{
+	  li{
+		  float:left;
+	  }
+  }
+}
+
+@import "components/_practica";

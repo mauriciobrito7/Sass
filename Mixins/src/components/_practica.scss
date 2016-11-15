@@ -1,0 +1,97 @@
+// Requerimos un grid-system de 12 columnas
+// Necesitamos un mixin que calcule el ancho
+// en porcentajes segun el numero de columnas
+
+@mixin grid($cols, $cols-total:12){
+		//función para pasarlo a porcentaje
+  width: percentage($cols / $cols-total);
+}
+
+.cols-6 {
+  @include grid(6);
+}
+
+// Media queries
+// Requerimos un mixin que cree un selector para una media query
+
+.selector {
+  //codigo
+  @media screen and (min-width:20em){
+    // codigo;
+  }
+}
+/*Para mejorar el uso de la media queries usamos un mixin*/
+$breakpoints: 20em 40em 60em;
+
+@mixin mq($min-width){
+  @media screen and (min-width:$min-width){
+    @content;
+  }
+}
+
+.box2 {
+  color: red;
+
+  @include mq(nth($breakpoints,1)){
+    color: green;
+  }
+
+  @include mq(nth($breakpoints,2)){
+    color: purple;
+  }
+}
+
+//Otra manera de hacerlo
+@mixin bp($point) {
+  @if $point == small {
+    @media (min-width: 478px) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: 1024px) { @content; }
+  }
+  @else if $point == large {
+    @media (min-width: etc)  { @content; }
+  } @else {
+    @media screen and (min-width: $point){
+      @content;
+    }
+  }
+}
+
+.box {
+  color: red;
+
+  @include bp(small){
+    color: green;
+  }
+
+  @include bp(medium){
+    color: purple;
+  }
+}
+
+// proporcion
+// Requerimos un mixin que asigne dimensiones
+// de alto y ancho a un elemento
+// con una proporcion determinada (p.ej. 16:8)
+/*
+ Esto trae problemas con flebox
+*/
+@mixin ratio($w,$h){
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: percentage($h / $w);
+}
+
+.video {
+  @include ratio(16,9);
+  position: relative;
+  iframe,
+  video,
+  object {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
