@@ -1,0 +1,161 @@
+// CSS functions
+
+// rgb()
+$color: rgb(255,10,0);
+.box {
+  background: $color;
+}
+
+// calc()
+.box {
+  width: calc(100% - 20px);
+}
+
+// scale(x,y)
+
+.box {
+  transform: scale(1.2);
+}
+
+// rotate()
+// translate(x,y)
+// linear-gradient() repating-linear-gradient()
+// radial-gradient() repeating-linear-gradient()
+// attr()
+
+
+// Funciones nativas en Sass 
+
+// unquote() quote()
+
+$string1: 'no-';
+$string2: repeat;
+$string3: $string1 + $string2;
+$font-size: 12px;
+
+.data{
+  value: $string3;
+  background-repeat: unquote($string3);
+  &::before {
+    content: quote($font-size);
+  }
+}
+
+// percentage() round()
+
+.percentage {
+  // width: percentage(60);
+  width: round(3/2);
+}
+
+
+// nth($list,$index) map-get($map,$key)
+
+// type-of()
+
+// unit()
+// Devuelve la unidad de medida de un número (como string)
+
+$unit: 20em;
+.unit {
+  width: unit($unit);
+}
+
+// unitless()
+// Devuelve un boolean
+// true  -> si el dato no tiene unidad
+// false -> si el dato si tiene unidad
+
+
+.unitless {
+  value: unitless($unit);
+}
+
+
+// tip
+
+$unit2: 20em + 2;
+
+.unit2 {
+  width: $unit2;
+}
+
+// Crear nuestras propias funciones
+
+@function miFuncion(){
+  // mis calculos
+  @return valor;
+}
+
+// Ejercicios
+
+// Function pixeles a em
+@function em($elemento,$padre:16px){
+  $em: ($elemento / $padre) * 1em;
+  @return $em;
+}
+
+
+p {
+  font-size: em(8px);
+}
+
+div {
+  $fz: 24px;
+  font-size: $fz;
+  p {
+    font-size: em(7px,$fz)
+  }
+}
+
+$path: '../assets/img/';
+
+// Image path (ruta a las imagenes)
+@function img($img){
+  @return url($path + $img);
+}
+
+
+div {
+  background: img('bg.jpg');
+}
+
+// Multiples box-shadow
+
+@function long-shadow($number,$color){
+  $box-shadow: 1px 1px #{$color};
+  @for $i from 2 through $number {
+    $box-shadow: '#{$box-shadow},
+           #{$i}px #{$i}px #{$color}'; 
+  }
+  @return unquote($box-shadow);
+}
+
+.long-shadow {
+  $color: green;
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
+  background: lighten($color,10);
+  box-shadow: long-shadow(20,$color);
+  border-radius: 50%;
+  font-size: em(10px);
+  text-align: center;
+  line-height: 100px;
+}
+
+
+// Convertir numero con unidad a solo numero
+// Input 20em, Output: 20
+
+@function no-unit($number){
+  @if no unitless($number) {
+    $unit: ($number * 0) + 1;
+    $no-unit: $number / $unit;
+    @return $no-unit;
+  }
+}
+
+.no-unit {
+  line-height: no-unit(50deg);
+}

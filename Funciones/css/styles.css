@@ -1,0 +1,72 @@
+.box {
+  background: #ff0a00;
+}
+
+.box {
+  width: calc(100% - 20px);
+}
+
+.box {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.data {
+  value: "no-repeat";
+  background-repeat: no-repeat;
+}
+
+.data::before {
+  content: "12px";
+}
+
+.percentage {
+  width: 2;
+}
+
+.unit {
+  width: "em";
+}
+
+.unitless {
+  value: false;
+}
+
+.unit2 {
+  width: 22em;
+}
+
+p {
+  font-size: 0.5em;
+}
+
+div {
+  font-size: 24px;
+}
+
+div p {
+  font-size: 0.29167em;
+}
+
+div {
+  background: url("../assets/img/bg.jpg");
+}
+
+.long-shadow {
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
+  background: #00b300;
+  box-shadow: 1px 1px green, 2px 2px green, 3px 3px green, 4px 4px green, 5px 5px green, 6px 6px green, 7px 7px green, 8px 8px green, 9px 9px green, 10px 10px green, 11px 11px green, 12px 12px green, 13px 13px green, 14px 14px green, 15px 15px green, 16px 16px green, 17px 17px green, 18px 18px green, 19px 19px green, 20px 20px green;
+  border-radius: 50%;
+  font-size: 0.625em;
+  text-align: center;
+  line-height: 100px;
+}
+
+.no-unit {
+  line-height: 50;
+}
+
+/*# sourceMappingURL=styles.css.map */
