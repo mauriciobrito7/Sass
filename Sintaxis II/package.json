@@ -1,7 +1,7 @@
 {
-  "name": "sass",
+  "name": "postcss",
   "version": "1.0.0",
-  "description": "Proyecto con Sass",
+  "description": "Proyecto con PostCSS",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,13 +12,9 @@
     "gulp": "^3.9.1",
     "gulp-postcss": "^6.2.0",
     "gulp-sass": "^2.3.2",
-    "i": "^0.3.5",
     "postcss-assets": "^4.1.0",
-    "postcss-color-function": "^2.0.1",
     "postcss-custom-media": "^5.0.1",
     "postcss-media-minmax": "^2.1.2",
-    "postcss-nested": "^1.0.0",
-    "postcss-simple-vars": "^3.0.0",
 	"browser-sync": "^2.16.0"
   }
 }

@@ -3,21 +3,15 @@
 const gulp = require('gulp'),
 	postCss=require('gulp-postcss'),
 	sass=require('gulp-sass'),
-	simpleVars= require('postcss-simple-vars'),
-	nested= require('postcss-nested'),
 	customMedia= require('postcss-custom-media'),
 	mediaMinMax= require('postcss-media-minmax'),
 	cssNano =require('cssnano'),
-	colorFunction = require("postcss-color-function"),
 	assets= require('postcss-assets'),
 	browserSync = require('browser-sync').create();;
 
 let postCssPlugins=[
-	simpleVars,
-	nested,
 	customMedia,
 	mediaMinMax,
-	colorFunction,
 	cssNano({
 		//Añadir el autoprefixer
 		autoprefixer:{
@@ -37,7 +31,7 @@ let postCssPlugins=[
 
 		//Es la carpeta base donde va a buscar
 		//'../assets/img/v.jpg'//
-		basePath:'assets',
+		basePath:'dist/assets',
 		/*Añade los cambios de cache de los recursos cacheados*/
 		cachebuster:true
 		/*Detecta si se le hecieron cambios al recurso porque lee los metadatos
