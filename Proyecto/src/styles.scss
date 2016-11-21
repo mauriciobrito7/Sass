@@ -1,0 +1,28 @@
+//Aqui se importaran los componentes del proyecto
+//Congif
+@import "config";
+
+//Layout 
+@import  "layout/_grid";
+@import  "layout/_header";
+
+//Estilos base
+@import "base/_base.scss";
+//Modulos
+@import "modules/_button.scss";
+@import "modules/_cards.scss";
+@import "modules/_menu.scss";
+@import "modules/_tabs.scss";
+
+//Componentes
+@import "Components/_class.scss";
+@import "Components/_courses.scss";
+@import "Components/_login.scss";
+@import "Components/_question.scss";
+@import "Components/_user-profile.scss";
+
+
+
+
+
+
