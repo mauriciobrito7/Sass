@@ -16,12 +16,15 @@
     listas pasadas como argumentos
 
 */
-
+/*De modo en que se separe la primera lista pasada por 
+parametro se separá la nueva lista generada por defecto,
+Aunque existe un tercer parametro para indicar el modo de
+separación: comma o space*/
 $colors: red green blue;
 $letters: 'a', 'b', 'c';
 $colors-letters: zip($colors,$letters);
 
-.lists {
+  .lists {
   $local-colors: append($colors,yellow);
   join: join($colors,$letters,space);
   colors: $local-colors;
