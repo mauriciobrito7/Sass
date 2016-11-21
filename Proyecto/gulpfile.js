@@ -58,9 +58,11 @@ gulp.task('default',() =>{
 	//gulp.watch('./dist/*.css',['styles'])
     gulp.watch("./src/*.scss", ['styles']);
     gulp.watch("./src/components/*.scss", ['styles']);
+    gulp.watch("./src/base/*.scss", ['styles']);
+    gulp.watch("./src/layout/*.scss", ['styles']);
+    gulp.watch("./src/modules/*.scss", ['styles']);	
     gulp.watch("./*.html").on('change', browserSync.reload);
     gulp.watch("./js/*.js").on('change', browserSync.reload);
 	
-
 	}
 );

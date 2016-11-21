@@ -8,13 +8,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.16.0",
     "cssnano": "^3.7.6",
     "gulp": "^3.9.1",
+    "gulp-install": "^0.6.0",
     "gulp-postcss": "^6.2.0",
     "gulp-sass": "^2.3.2",
     "postcss-assets": "^4.1.0",
     "postcss-custom-media": "^5.0.1",
-    "postcss-media-minmax": "^2.1.2",
-	"browser-sync": "^2.16.0"
+    "postcss-media-minmax": "^2.1.2"
   }
 }
