@@ -1,0 +1,20 @@
+{
+  "name": "postcss",
+  "version": "1.0.0",
+  "description": "Proyecto con PostCSS",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^3.7.6",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "postcss-assets": "^4.1.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-media-minmax": "^2.1.2",
+	"browser-sync": "^2.16.0"
+  }
+}

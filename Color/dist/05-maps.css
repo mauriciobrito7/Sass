@@ -1,0 +1,13 @@
+.map{
+  map-merge:(k1:v1,k2:v2,k-1:v-1,k-2:v-2);
+  map-keys:k1,k2,k-1,k-2;
+  map-values:v1,v2,v-1,v-2; }
+
+.box{
+  color:red; }
+  @media screen and (min-width:64em){
+    .box{
+      color:#ff0; } }
+  @media screen and (min-width:32.8125em){
+    .box{
+      color:green; } }

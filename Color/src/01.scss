@@ -1,0 +1,88 @@
+// $rgb: rgb(200,20,50);
+// $hsl: hsl(300,80,50);
+// $color: lighten($base,20);
+// $value: lightness($color);
+
+// Funciones RGB
+// red(), green(), blue() //devuelven la cantidad de color indicado
+// rgb(), rgba()
+
+// Funciones HSL
+// hue(), saturation(), lightness();// devuelve n valor en porcentaje o grados
+// adjust-hue()
+// saturate(), desaturate()
+// lighten(), darken()
+
+// Colores complementarios e inversos
+// complement()       
+//   opuesto en HSL (opuesto en 180deg de hue)
+// invert()   
+//   opuesto en RGB (restar del valor maximo 
+//   de canal el valor actual)
+
+
+// body {
+//   background: complement($hsl);
+//   $value: hue(complement($hsl));
+//   &:before{
+//     content: "#{$value}";
+//     font-size: 10em;
+//     display: block;
+//     text-align: center;
+//   }
+// }
+
+
+body {
+  background: #111;
+  margin: 0;
+}
+
+// @function spectrum($direction){
+//   $color: 'linear-gradient(#{$direction}';
+//   @for $i from 1 through 360 {
+//       $current-color: hsl($i,100,50);
+//       $color: '#{$color}, #{$current-color}';
+//   }
+//   $color: unquote('#{$color})');
+//   @return $color;
+// }
+
+// .spectrum {
+//   width: 90%;
+//   height: 300px;
+//   border: 1px solid white;
+//   margin: 2em auto;
+//   background: spectrum(to left);
+// }
+
+
+.spectrum {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin: 2em auto;
+  position: relative;
+  animation: spectrum 1s linear infinite;
+  @keyframes spectrum {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+}
+
+.dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: 190px;
+  transform-origin: 10px 200px;
+  @for $i from 1 through 360 {
+    &:nth-child(#{$i}){
+      //box-shadow: 0 0 10px 5px hsl($i,100,50);
+      transform: rotate($i * 1deg);
+      background-color: hsl($i,100,50);
+    }
+  }
+}
