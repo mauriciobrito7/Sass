@@ -1,11 +1,15 @@
 // recorrer listas anidadas
+/*Para especificar que hay una lista dentro de otra se encierra
+entre parentesis*/
 $networks: (facebook,blue,1px),
            (twitter,lightblue,2px),
            (youtube,red,3px);
 
 @each $network in $networks {
+  //guardo el primer valor de cada lista para crear la clase
   $selector: nth($network,1);
   .#{$selector}{
+    //para cada propiedad saco el valor correspondiente
     background-color: nth($network,2);
     margin: nth($network,3);
   }
