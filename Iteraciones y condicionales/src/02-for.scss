@@ -17,6 +17,7 @@
 
 $list: blue, red, green, magenta, purple;
 
+//Recorrer una lista mediante su tamaño
 @for $i from 1 through length($list){
   $current:  nth($list,$i);
   .button.#{$current}{
