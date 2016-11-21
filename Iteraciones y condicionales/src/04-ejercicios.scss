@@ -1,0 +1,61 @@
+// recorrer listas anidadas
+$networks: (facebook,blue,1px),
+           (twitter,lightblue,2px),
+           (youtube,red,3px);
+
+@each $network in $networks {
+  $selector: nth($network,1);
+  .#{$selector}{
+    background-color: nth($network,2);
+    margin: nth($network,3);
+  }
+}
+
+// Crear funcion para recuperar un valor
+// dentro de listas anidadas
+
+@function sublist($list,$index,$subindex){
+  $sublist: nth($list,$index);
+  $value: nth($sublist,$subindex);
+  @return $value;
+}
+
+data {
+  value: sublist($networks,2,3);
+}
+
+
+// Recorrer un mapa anidado
+
+$colors: (
+  blue  : (
+    base: blue,
+    dark: darken(blue,10),
+    light: lighten(blue,10)
+  ),
+  green : (
+    base: green,
+    dark: darken(green,10),
+    light: lighten(green,10)
+  )
+);
+
+@function submap($map, $key, $subkey) {
+  $submap: map-get($map, $key);
+  $value: map-get($submap, $subkey);
+  @return $value;
+}
+
+data {
+  value: submap($colors,green,dark);
+}
+
+// Recorrer el mapa anidado
+
+@each $color, $subcolors in $colors {
+  @each $type, $value in $subcolors {
+    .#{$color}-#{$type} {
+      background-color: $value;
+    }
+  }
+}

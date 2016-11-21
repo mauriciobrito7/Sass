@@ -1,0 +1,51 @@
+/* 
+  Each para listas
+
+  @each $item in $list {
+    tu codigo
+  }
+
+  Each para mapas
+
+  @each $key, $value in $map {
+    tu codigo
+  }
+
+ */
+
+ $colors: blue, yellow, red, green;
+
+ @each $color in $colors {
+  .button.#{$color}{
+    background-color: $color;
+  }
+ }
+
+ $messages: (
+    alert: yellow,
+    error: red,
+    success: green
+ );
+
+ .message {
+  display: block;
+  font-size: .9em;
+  padding: 1em;
+ }
+
+ @each $message, $color in $messages {
+  .message.#{$message}{
+    background-color: $color;
+  }
+ }
+
+ // while
+
+ $i: 1;
+ @while $i <= length($colors) {
+  $current: nth($colors,$i);
+  .while.#{$current}{
+    background-color: $current;
+  }
+  $i: $i + 1;
+ }

@@ -1,0 +1,44 @@
+.item-1{
+  width:10%; }
+
+.item-2{
+  width:20%; }
+
+.item-3{
+  width:30%; }
+
+.item-4{
+  width:40%; }
+
+.item-5{
+  width:50%; }
+
+.item-6{
+  width:60%; }
+
+.item-7{
+  width:70%; }
+
+.item-8{
+  width:80%; }
+
+.item-9{
+  width:90%; }
+
+.button.blue{
+  background-color:blue; }
+
+.button.red{
+  background-color:red; }
+
+.button.green{
+  background-color:green; }
+
+.button.magenta{
+  background-color:#f0f; }
+
+.button.purple{
+  background-color:purple; }
+
+div .parrafo,div p{
+  color:red; }

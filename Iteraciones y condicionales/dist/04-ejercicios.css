@@ -1,0 +1,33 @@
+.facebook{
+  background-color:blue;
+  margin:1px; }
+
+.twitter{
+  background-color:#add8e6;
+  margin:2px; }
+
+.youtube{
+  background-color:red;
+  margin:3px; }
+
+data{
+  value:2px;
+  value:#004d00; }
+
+.blue-base{
+  background-color:blue; }
+
+.blue-dark{
+  background-color:#00c; }
+
+.blue-light{
+  background-color:#33f; }
+
+.green-base{
+  background-color:green; }
+
+.green-dark{
+  background-color:#004d00; }
+
+.green-light{
+  background-color:#00b300; }

@@ -1,0 +1,36 @@
+/* For
+
+@for $i from <start> through <end> {
+  // codigo que se repite hasta el numero <end>
+}
+
+@for $i from <start> to <end> {
+  // codigo que se repite hasta el numero <end-1>
+}
+*/
+
+@for $i from 1 to 10 {
+  .item-#{$i}{
+    width: percentage($i/10);
+  }
+}
+
+$list: blue, red, green, magenta, purple;
+
+@for $i from 1 through length($list){
+  $current:  nth($list,$i);
+  .button.#{$current}{
+    background-color: $current;
+  }
+}
+
+@mixin prueba($elem) {
+  #{$elem} {
+    color: red;
+  }
+}
+
+div {
+  @include prueba("p");
+  @include prueba(".parrafo");
+}

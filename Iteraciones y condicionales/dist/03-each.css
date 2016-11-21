@@ -1,0 +1,37 @@
+.button.blue{
+  background-color:blue; }
+
+.button.yellow{
+  background-color:#ff0; }
+
+.button.red{
+  background-color:red; }
+
+.button.green{
+  background-color:green; }
+
+.message{
+  display:block;
+  font-size:.9em;
+  padding:1em; }
+
+.message.alert{
+  background-color:#ff0; }
+
+.message.error{
+  background-color:red; }
+
+.message.success{
+  background-color:green; }
+
+.while.blue{
+  background-color:blue; }
+
+.while.yellow{
+  background-color:#ff0; }
+
+.while.red{
+  background-color:red; }
+
+.while.green{
+  background-color:green; }

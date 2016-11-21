@@ -1,0 +1,56 @@
+// Condicionales
+
+/*Mixin*/
+/*
+Para hacer un pequeño layout donde se le pasa un 
+elemento html y un número de entre 1-10 para medir
+el ancho en porcentaje que va a usar.
+*/
+@mixin grid($child,$number){
+  display: flex;
+  flex-wrap: wrap;
+
+//Condición para elementos li
+  @if $child == li {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  #{$child}, .#{$child} {
+    width: (100% / $number);
+  }
+}
+
+.gallery {
+  @include grid(photo,4);
+}
+
+/*No se usan mucho los if pero en algunos casos va a 
+ser interesante por ejemplo cuando se qiera determinar un 
+parametro que respete ciertas condiciones */
+
+/*Creando un layout con sistema de 12 columnas y verficando
+que el parametro no sea mayor a 12 para que no sea mayor al contenedor*/
+@mixin columns($col,$max-cols:12){
+  @if $col <= $max-cols {
+    width: percentage($col / $max-cols);
+  } @else {
+    @at-root {
+      body {
+        &::before {
+          content: "El parámetro '$col' no puede ser mayor a '$max-cols'";
+          display: block;
+          padding-bottom: 1em;
+          font-family: monospace;
+        }
+      }
+    }
+  }
+}
+
+.column-3{
+  @include columns(13);
+  background: red;
+}

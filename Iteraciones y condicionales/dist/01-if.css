@@ -1,0 +1,16 @@
+@charset "UTF-8";
+  .gallery{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap; }
+  .gallery .photo,.gallery photo{
+    width:25%; }
+.column-3{
+  background:red; }
+  body:before{
+    content:"El parámetro '$col' no puede ser mayor a '$max-cols'";
+    display:block;
+    padding-bottom:1em;
+    font-family:monospace; }
