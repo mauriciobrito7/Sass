@@ -19,751 +19,751 @@ body{
   border:1px solid hsla(0,0%,100%,.3); }
   .bar:nth-child(1){
     height:85px;
-    background-color:#1a0000;
+    background-color:#910000;
     -webkit-animation:a 1s linear infinite alternate;
             animation:a 1s linear infinite alternate; }
 
 @-webkit-keyframes a{
   to{
-    height:33px;
-    background-color:#3d0000; } }
+    height:156px;
+    background-color:#a80000; } }
 
 @keyframes a{
   to{
-    height:33px;
-    background-color:#3d0000; } }
+    height:156px;
+    background-color:#a80000; } }
   .bar:nth-child(2){
-    height:44px;
-    background-color:#100000;
+    height:149px;
+    background-color:#e20000;
     -webkit-animation:b 1s linear infinite alternate;
             animation:b 1s linear infinite alternate; }
 
 @-webkit-keyframes b{
   to{
-    height:140px;
-    background-color:#7d0000; } }
+    height:93px;
+    background-color:#320000; } }
 
 @keyframes b{
   to{
-    height:140px;
-    background-color:#7d0000; } }
+    height:93px;
+    background-color:#320000; } }
   .bar:nth-child(3){
-    height:74px;
-    background-color:#ed0000;
+    height:91px;
+    background-color:#250000;
     -webkit-animation:c 1s linear infinite alternate;
             animation:c 1s linear infinite alternate; }
 
 @-webkit-keyframes c{
   to{
-    height:192px;
-    background-color:#7b0000; } }
+    height:91px;
+    background-color:#2e0000; } }
 
 @keyframes c{
   to{
-    height:192px;
-    background-color:#7b0000; } }
+    height:91px;
+    background-color:#2e0000; } }
   .bar:nth-child(4){
-    height:99px;
-    background-color:#600;
+    height:65px;
+    background-color:#be0000;
     -webkit-animation:d 1s linear infinite alternate;
             animation:d 1s linear infinite alternate; }
 
 @-webkit-keyframes d{
   to{
-    height:152px;
-    background-color:#7a0000; } }
+    height:1px;
+    background-color:#a60000; } }
 
 @keyframes d{
   to{
-    height:152px;
-    background-color:#7a0000; } }
+    height:1px;
+    background-color:#a60000; } }
   .bar:nth-child(5){
-    height:130px;
-    background-color:#fe0000;
+    height:14px;
+    background-color:#c60000;
     -webkit-animation:e 1s linear infinite alternate;
             animation:e 1s linear infinite alternate; }
 
 @-webkit-keyframes e{
   to{
-    height:16px;
-    background-color:#430000; } }
+    height:13px;
+    background-color:#8f0000; } }
 
 @keyframes e{
   to{
-    height:16px;
-    background-color:#430000; } }
+    height:13px;
+    background-color:#8f0000; } }
   .bar:nth-child(6){
-    height:29px;
-    background-color:#f60000;
+    height:48px;
+    background-color:#020000;
     -webkit-animation:f 1s linear infinite alternate;
             animation:f 1s linear infinite alternate; }
 
 @-webkit-keyframes f{
   to{
-    height:15px;
-    background-color:#500; } }
+    height:107px;
+    background-color:#e00; } }
 
 @keyframes f{
   to{
-    height:15px;
-    background-color:#500; } }
+    height:107px;
+    background-color:#e00; } }
   .bar:nth-child(7){
-    height:179px;
-    background-color:#f10000;
+    height:25px;
+    background-color:#ea0000;
     -webkit-animation:g 1s linear infinite alternate;
             animation:g 1s linear infinite alternate; }
 
 @-webkit-keyframes g{
   to{
-    height:177px;
-    background-color:#5f0000; } }
+    height:144px;
+    background-color:#c30000; } }
 
 @keyframes g{
   to{
-    height:177px;
-    background-color:#5f0000; } }
+    height:144px;
+    background-color:#c30000; } }
   .bar:nth-child(8){
-    height:26px;
-    background-color:#690000;
+    height:69px;
+    background-color:#b00;
     -webkit-animation:h 1s linear infinite alternate;
             animation:h 1s linear infinite alternate; }
 
 @-webkit-keyframes h{
   to{
-    height:167px;
-    background-color:#060000; } }
+    height:161px;
+    background-color:#d00000; } }
 
 @keyframes h{
   to{
-    height:167px;
-    background-color:#060000; } }
+    height:161px;
+    background-color:#d00000; } }
   .bar:nth-child(9){
-    height:66px;
-    background-color:#d00000;
+    height:33px;
+    background-color:#6f0000;
     -webkit-animation:i 1s linear infinite alternate;
             animation:i 1s linear infinite alternate; }
 
 @-webkit-keyframes i{
   to{
-    height:160px;
-    background-color:#d80000; } }
+    height:54px;
+    background-color:#1b0000; } }
 
 @keyframes i{
   to{
-    height:160px;
-    background-color:#d80000; } }
+    height:54px;
+    background-color:#1b0000; } }
   .bar:nth-child(10){
-    height:30px;
-    background-color:#b50000;
+    height:46px;
+    background-color:#570000;
     -webkit-animation:j 1s linear infinite alternate;
             animation:j 1s linear infinite alternate; }
 
 @-webkit-keyframes j{
   to{
-    height:133px;
-    background-color:#ec0000; } }
+    height:52px;
+    background-color:#3f0000; } }
 
 @keyframes j{
   to{
-    height:133px;
-    background-color:#ec0000; } }
+    height:52px;
+    background-color:#3f0000; } }
   .bar:nth-child(11){
-    height:43px;
-    background-color:#2a0000;
+    height:46px;
+    background-color:#430000;
     -webkit-animation:k 1s linear infinite alternate;
             animation:k 1s linear infinite alternate; }
 
 @-webkit-keyframes k{
   to{
-    height:13px;
-    background-color:#520000; } }
+    height:131px;
+    background-color:#4a0000; } }
 
 @keyframes k{
   to{
-    height:13px;
-    background-color:#520000; } }
+    height:131px;
+    background-color:#4a0000; } }
   .bar:nth-child(12){
-    height:88px;
-    background-color:#c90000;
+    height:91px;
+    background-color:#6e0000;
     -webkit-animation:l 1s linear infinite alternate;
             animation:l 1s linear infinite alternate; }
 
 @-webkit-keyframes l{
   to{
-    height:86px;
-    background-color:#940000; } }
+    height:32px;
+    background-color:#3e0000; } }
 
 @keyframes l{
   to{
-    height:86px;
-    background-color:#940000; } }
+    height:32px;
+    background-color:#3e0000; } }
   .bar:nth-child(13){
-    height:62px;
-    background-color:#d10000;
+    height:59px;
+    background-color:#2c0000;
     -webkit-animation:m 1s linear infinite alternate;
             animation:m 1s linear infinite alternate; }
 
 @-webkit-keyframes m{
   to{
-    height:95px;
-    background-color:#be0000; } }
+    height:58px;
+    background-color:#760000; } }
 
 @keyframes m{
   to{
-    height:95px;
-    background-color:#be0000; } }
+    height:58px;
+    background-color:#760000; } }
   .bar:nth-child(14){
-    height:192px;
-    background-color:#800;
+    height:105px;
+    background-color:#400;
     -webkit-animation:n 1s linear infinite alternate;
             animation:n 1s linear infinite alternate; }
 
 @-webkit-keyframes n{
   to{
-    height:103px;
-    background-color:#740000; } }
+    height:25px;
+    background-color:#f10000; } }
 
 @keyframes n{
   to{
-    height:103px;
-    background-color:#740000; } }
+    height:25px;
+    background-color:#f10000; } }
   .bar:nth-child(15){
-    height:186px;
-    background-color:#290000;
+    height:16px;
+    background-color:#ce0000;
     -webkit-animation:o 1s linear infinite alternate;
             animation:o 1s linear infinite alternate; }
 
 @-webkit-keyframes o{
   to{
-    height:123px;
-    background-color:#3f0000; } }
+    height:106px;
+    background-color:#2b0000; } }
 
 @keyframes o{
   to{
-    height:123px;
-    background-color:#3f0000; } }
+    height:106px;
+    background-color:#2b0000; } }
   .bar:nth-child(16){
-    height:165px;
-    background-color:#2e0000;
+    height:127px;
+    background-color:#d10000;
     -webkit-animation:p 1s linear infinite alternate;
             animation:p 1s linear infinite alternate; }
 
 @-webkit-keyframes p{
   to{
-    height:99px;
-    background-color:#700; } }
+    height:125px;
+    background-color:#3a0000; } }
 
 @keyframes p{
   to{
-    height:99px;
-    background-color:#700; } }
+    height:125px;
+    background-color:#3a0000; } }
   .bar:nth-child(17){
-    height:39px;
-    background-color:#fd0000;
+    height:173px;
+    background-color:#cd0000;
     -webkit-animation:q 1s linear infinite alternate;
             animation:q 1s linear infinite alternate; }
 
 @-webkit-keyframes q{
   to{
-    height:109px;
-    background-color:#8d0000; } }
+    height:74px;
+    background-color:#dc0000; } }
 
 @keyframes q{
   to{
-    height:109px;
-    background-color:#8d0000; } }
+    height:74px;
+    background-color:#dc0000; } }
   .bar:nth-child(18){
-    height:168px;
-    background-color:#cb0000;
+    height:33px;
+    background-color:#9a0000;
     -webkit-animation:r 1s linear infinite alternate;
             animation:r 1s linear infinite alternate; }
 
 @-webkit-keyframes r{
   to{
-    height:182px;
-    background-color:#a00000; } }
+    height:112px;
+    background-color:#820000; } }
 
 @keyframes r{
   to{
-    height:182px;
-    background-color:#a00000; } }
+    height:112px;
+    background-color:#820000; } }
   .bar:nth-child(19){
-    height:147px;
-    background-color:#780000;
+    height:143px;
+    background-color:#fb0000;
     -webkit-animation:s 1s linear infinite alternate;
             animation:s 1s linear infinite alternate; }
 
 @-webkit-keyframes s{
   to{
-    height:114px;
-    background-color:#c80000; } }
+    height:194px;
+    background-color:#840000; } }
 
 @keyframes s{
   to{
-    height:114px;
-    background-color:#c80000; } }
+    height:194px;
+    background-color:#840000; } }
   .bar:nth-child(20){
-    height:123px;
-    background-color:#980000;
+    height:134px;
+    background-color:#490000;
     -webkit-animation:t 1s linear infinite alternate;
             animation:t 1s linear infinite alternate; }
 
 @-webkit-keyframes t{
   to{
-    height:173px;
-    background-color:#200000; } }
+    height:88px;
+    background-color:#420000; } }
 
 @keyframes t{
   to{
-    height:173px;
-    background-color:#200000; } }
+    height:88px;
+    background-color:#420000; } }
   .bar:nth-child(21){
-    height:11px;
-    background-color:#e90000;
+    height:137px;
+    background-color:#170000;
     -webkit-animation:u 1s linear infinite alternate;
             animation:u 1s linear infinite alternate; }
 
 @-webkit-keyframes u{
   to{
-    height:64px;
-    background-color:#6b0000; } }
+    height:92px;
+    background-color:#a40000; } }
 
 @keyframes u{
   to{
-    height:64px;
-    background-color:#6b0000; } }
+    height:92px;
+    background-color:#a40000; } }
   .bar:nth-child(22){
-    height:119px;
-    background-color:#3b0000;
+    height:75px;
+    background-color:#df0000;
     -webkit-animation:v 1s linear infinite alternate;
             animation:v 1s linear infinite alternate; }
 
 @-webkit-keyframes v{
   to{
-    height:39px;
-    background-color:#610000; } }
+    height:4px;
+    background-color:#2d0000; } }
 
 @keyframes v{
   to{
-    height:39px;
-    background-color:#610000; } }
+    height:4px;
+    background-color:#2d0000; } }
   .bar:nth-child(23){
-    height:171px;
-    background-color:#1e0000;
+    height:156px;
+    background-color:#870000;
     -webkit-animation:w 1s linear infinite alternate;
             animation:w 1s linear infinite alternate; }
 
 @-webkit-keyframes w{
   to{
-    height:42px;
-    background-color:#080000; } }
+    height:189px;
+    background-color:#350000; } }
 
 @keyframes w{
   to{
-    height:42px;
-    background-color:#080000; } }
+    height:189px;
+    background-color:#350000; } }
   .bar:nth-child(24){
-    height:81px;
-    background-color:#400;
+    height:104px;
+    background-color:#060000;
     -webkit-animation:x 1s linear infinite alternate;
             animation:x 1s linear infinite alternate; }
 
 @-webkit-keyframes x{
   to{
-    height:103px;
-    background-color:#da0000; } }
+    height:151px;
+    background-color:#1e0000; } }
 
 @keyframes x{
   to{
-    height:103px;
-    background-color:#da0000; } }
+    height:151px;
+    background-color:#1e0000; } }
   .bar:nth-child(25){
-    height:153px;
-    background-color:#ed0000;
+    height:148px;
+    background-color:#400;
     -webkit-animation:y 1s linear infinite alternate;
             animation:y 1s linear infinite alternate; }
 
 @-webkit-keyframes y{
   to{
-    height:81px;
-    background-color:darkred; } }
+    height:53px;
+    background-color:#fb0000; } }
 
 @keyframes y{
   to{
-    height:81px;
-    background-color:darkred; } }
+    height:53px;
+    background-color:#fb0000; } }
   .bar:nth-child(26){
-    height:194px;
-    background-color:#140000;
+    height:146px;
+    background-color:#b00000;
     -webkit-animation:z 1s linear infinite alternate;
             animation:z 1s linear infinite alternate; }
 
 @-webkit-keyframes z{
   to{
-    height:182px;
-    background-color:#070000; } }
+    height:198px;
+    background-color:#280000; } }
 
 @keyframes z{
   to{
-    height:182px;
-    background-color:#070000; } }
+    height:198px;
+    background-color:#280000; } }
   .bar:nth-child(27){
-    height:152px;
-    background-color:#f80000;
+    height:4px;
+    background-color:#6a0000;
     -webkit-animation:A 1s linear infinite alternate;
             animation:A 1s linear infinite alternate; }
 
 @-webkit-keyframes A{
   to{
-    height:188px;
-    background-color:#280000; } }
+    height:96px;
+    background-color:red; } }
 
 @keyframes A{
   to{
-    height:188px;
-    background-color:#280000; } }
+    height:96px;
+    background-color:red; } }
   .bar:nth-child(28){
-    height:101px;
-    background-color:#6f0000;
+    height:15px;
+    background-color:#610000;
     -webkit-animation:B 1s linear infinite alternate;
             animation:B 1s linear infinite alternate; }
 
 @-webkit-keyframes B{
   to{
-    height:86px;
-    background-color:#700; } }
+    height:152px;
+    background-color:#1e0000; } }
 
 @keyframes B{
   to{
-    height:86px;
-    background-color:#700; } }
+    height:152px;
+    background-color:#1e0000; } }
   .bar:nth-child(29){
-    height:70px;
-    background-color:#9b0000;
+    height:163px;
+    background-color:#f90000;
     -webkit-animation:C 1s linear infinite alternate;
             animation:C 1s linear infinite alternate; }
 
 @-webkit-keyframes C{
   to{
-    height:84px;
-    background-color:#1a0000; } }
+    height:40px;
+    background-color:#460000; } }
 
 @keyframes C{
   to{
-    height:84px;
-    background-color:#1a0000; } }
+    height:40px;
+    background-color:#460000; } }
   .bar:nth-child(30){
-    height:185px;
-    background-color:#bc0000;
+    height:51px;
+    background-color:#3b0000;
     -webkit-animation:D 1s linear infinite alternate;
             animation:D 1s linear infinite alternate; }
 
 @-webkit-keyframes D{
   to{
-    height:198px;
-    background-color:#ca0000; } }
+    height:132px;
+    background-color:#e90000; } }
 
 @keyframes D{
   to{
-    height:198px;
-    background-color:#ca0000; } }
+    height:132px;
+    background-color:#e90000; } }
   .bar:nth-child(31){
-    height:111px;
-    background-color:#f40000;
+    height:99px;
+    background-color:#930000;
     -webkit-animation:E 1s linear infinite alternate;
             animation:E 1s linear infinite alternate; }
 
 @-webkit-keyframes E{
   to{
-    height:149px;
-    background-color:#6e0000; } }
+    height:168px;
+    background-color:#4e0000; } }
 
 @keyframes E{
   to{
-    height:149px;
-    background-color:#6e0000; } }
+    height:168px;
+    background-color:#4e0000; } }
   .bar:nth-child(32){
-    height:22px;
-    background-color:#a50000;
+    height:101px;
+    background-color:#d20000;
     -webkit-animation:F 1s linear infinite alternate;
             animation:F 1s linear infinite alternate; }
 
 @-webkit-keyframes F{
   to{
-    height:188px;
-    background-color:#240000; } }
+    height:70px;
+    background-color:maroon; } }
 
 @keyframes F{
   to{
-    height:188px;
-    background-color:#240000; } }
+    height:70px;
+    background-color:maroon; } }
   .bar:nth-child(33){
-    height:49px;
-    background-color:#900;
+    height:77px;
+    background-color:#df0000;
     -webkit-animation:G 1s linear infinite alternate;
             animation:G 1s linear infinite alternate; }
 
 @-webkit-keyframes G{
   to{
-    height:31px;
-    background-color:#260000; } }
+    height:140px;
+    background-color:#860000; } }
 
 @keyframes G{
   to{
-    height:31px;
-    background-color:#260000; } }
+    height:140px;
+    background-color:#860000; } }
   .bar:nth-child(34){
-    height:120px;
-    background-color:#390000;
+    height:102px;
+    background-color:#cf0000;
     -webkit-animation:H 1s linear infinite alternate;
             animation:H 1s linear infinite alternate; }
 
 @-webkit-keyframes H{
   to{
-    height:72px;
-    background-color:#980000; } }
+    height:50px;
+    background-color:#b50000; } }
 
 @keyframes H{
   to{
-    height:72px;
-    background-color:#980000; } }
+    height:50px;
+    background-color:#b50000; } }
   .bar:nth-child(35){
-    height:24px;
-    background-color:#a00;
+    height:134px;
+    background-color:#170000;
     -webkit-animation:I 1s linear infinite alternate;
             animation:I 1s linear infinite alternate; }
 
 @-webkit-keyframes I{
   to{
-    height:96px;
-    background-color:#fc0000; } }
+    height:153px;
+    background-color:#a90000; } }
 
 @keyframes I{
   to{
-    height:96px;
-    background-color:#fc0000; } }
+    height:153px;
+    background-color:#a90000; } }
   .bar:nth-child(36){
-    height:194px;
-    background-color:#800;
+    height:70px;
+    background-color:#f00000;
     -webkit-animation:J 1s linear infinite alternate;
             animation:J 1s linear infinite alternate; }
 
 @-webkit-keyframes J{
   to{
-    height:140px;
-    background-color:#280000; } }
+    height:81px;
+    background-color:#0f0000; } }
 
 @keyframes J{
   to{
-    height:140px;
-    background-color:#280000; } }
+    height:81px;
+    background-color:#0f0000; } }
   .bar:nth-child(37){
-    height:19px;
-    background-color:#e80000;
+    height:2px;
+    background-color:#2c0000;
     -webkit-animation:K 1s linear infinite alternate;
             animation:K 1s linear infinite alternate; }
 
 @-webkit-keyframes K{
   to{
-    height:104px;
-    background-color:#3a0000; } }
+    height:119px;
+    background-color:#b70000; } }
 
 @keyframes K{
   to{
-    height:104px;
-    background-color:#3a0000; } }
+    height:119px;
+    background-color:#b70000; } }
   .bar:nth-child(38){
-    height:101px;
-    background-color:#4e0000;
+    height:77px;
+    background-color:#de0000;
     -webkit-animation:L 1s linear infinite alternate;
             animation:L 1s linear infinite alternate; }
 
 @-webkit-keyframes L{
   to{
-    height:17px;
-    background-color:#320000; } }
+    height:172px;
+    background-color:#1c0000; } }
 
 @keyframes L{
   to{
-    height:17px;
-    background-color:#320000; } }
+    height:172px;
+    background-color:#1c0000; } }
   .bar:nth-child(39){
-    height:175px;
-    background-color:#650000;
+    height:68px;
+    background-color:#1e0000;
     -webkit-animation:M 1s linear infinite alternate;
             animation:M 1s linear infinite alternate; }
 
 @-webkit-keyframes M{
   to{
-    height:130px;
-    background-color:#f20000; } }
+    height:116px;
+    background-color:#490000; } }
 
 @keyframes M{
   to{
-    height:130px;
-    background-color:#f20000; } }
+    height:116px;
+    background-color:#490000; } }
   .bar:nth-child(40){
-    height:97px;
-    background-color:#4b0000;
+    height:56px;
+    background-color:#400000;
     -webkit-animation:N 1s linear infinite alternate;
             animation:N 1s linear infinite alternate; }
 
 @-webkit-keyframes N{
   to{
-    height:16px;
-    background-color:red; } }
+    height:146px;
+    background-color:#da0000; } }
 
 @keyframes N{
   to{
-    height:16px;
-    background-color:red; } }
+    height:146px;
+    background-color:#da0000; } }
   .bar:nth-child(41){
-    height:15px;
-    background-color:#900;
+    height:128px;
+    background-color:#a40000;
     -webkit-animation:O 1s linear infinite alternate;
             animation:O 1s linear infinite alternate; }
 
 @-webkit-keyframes O{
   to{
-    height:50px;
-    background-color:#9a0000; } }
+    height:37px;
+    background-color:#060000; } }
 
 @keyframes O{
   to{
-    height:50px;
-    background-color:#9a0000; } }
+    height:37px;
+    background-color:#060000; } }
   .bar:nth-child(42){
-    height:50px;
-    background-color:#490000;
+    height:2px;
+    background-color:#db0000;
     -webkit-animation:P 1s linear infinite alternate;
             animation:P 1s linear infinite alternate; }
 
 @-webkit-keyframes P{
   to{
-    height:101px;
-    background-color:#8a0000; } }
+    height:171px;
+    background-color:#3d0000; } }
 
 @keyframes P{
   to{
-    height:101px;
-    background-color:#8a0000; } }
+    height:171px;
+    background-color:#3d0000; } }
   .bar:nth-child(43){
-    height:109px;
-    background-color:#7a0000;
+    height:175px;
+    background-color:#cf0000;
     -webkit-animation:Q 1s linear infinite alternate;
             animation:Q 1s linear infinite alternate; }
 
 @-webkit-keyframes Q{
   to{
-    height:127px;
-    background-color:#c40000; } }
+    height:35px;
+    background-color:#b30000; } }
 
 @keyframes Q{
   to{
-    height:127px;
-    background-color:#c40000; } }
+    height:35px;
+    background-color:#b30000; } }
   .bar:nth-child(44){
-    height:200px;
-    background-color:#900000;
+    height:50px;
+    background-color:#140000;
     -webkit-animation:R 1s linear infinite alternate;
             animation:R 1s linear infinite alternate; }
 
 @-webkit-keyframes R{
   to{
-    height:58px;
-    background-color:#ec0000; } }
+    height:23px;
+    background-color:#e50000; } }
 
 @keyframes R{
   to{
-    height:58px;
-    background-color:#ec0000; } }
+    height:23px;
+    background-color:#e50000; } }
   .bar:nth-child(45){
-    height:159px;
-    background-color:#7d0000;
+    height:188px;
+    background-color:#5a0000;
     -webkit-animation:S 1s linear infinite alternate;
             animation:S 1s linear infinite alternate; }
 
 @-webkit-keyframes S{
   to{
-    height:20px;
-    background-color:#380000; } }
+    height:186px;
+    background-color:#600; } }
 
 @keyframes S{
   to{
-    height:20px;
-    background-color:#380000; } }
+    height:186px;
+    background-color:#600; } }
   .bar:nth-child(46){
-    height:5px;
-    background-color:#6a0000;
+    height:46px;
+    background-color:#c60000;
     -webkit-animation:T 1s linear infinite alternate;
             animation:T 1s linear infinite alternate; }
 
 @-webkit-keyframes T{
   to{
-    height:200px;
-    background-color:#f30000; } }
+    height:7px;
+    background-color:#520000; } }
 
 @keyframes T{
   to{
-    height:200px;
-    background-color:#f30000; } }
+    height:7px;
+    background-color:#520000; } }
   .bar:nth-child(47){
-    height:196px;
-    background-color:#170000;
+    height:135px;
+    background-color:darkred;
     -webkit-animation:U 1s linear infinite alternate;
             animation:U 1s linear infinite alternate; }
 
 @-webkit-keyframes U{
   to{
-    height:3px;
-    background-color:#410000; } }
+    height:44px;
+    background-color:#c10000; } }
 
 @keyframes U{
   to{
-    height:3px;
-    background-color:#410000; } }
+    height:44px;
+    background-color:#c10000; } }
   .bar:nth-child(48){
-    height:20px;
-    background-color:#090000;
+    height:192px;
+    background-color:#bd0000;
     -webkit-animation:V 1s linear infinite alternate;
             animation:V 1s linear infinite alternate; }
 
 @-webkit-keyframes V{
   to{
-    height:61px;
-    background-color:#520000; } }
+    height:155px;
+    background-color:#b50000; } }
 
 @keyframes V{
   to{
-    height:61px;
-    background-color:#520000; } }
+    height:155px;
+    background-color:#b50000; } }
   .bar:nth-child(49){
-    height:85px;
-    background-color:#700;
+    height:137px;
+    background-color:#3f0000;
     -webkit-animation:W 1s linear infinite alternate;
             animation:W 1s linear infinite alternate; }
 
 @-webkit-keyframes W{
   to{
-    height:103px;
-    background-color:#fb0000; } }
+    height:165px;
+    background-color:#620000; } }
 
 @keyframes W{
   to{
-    height:103px;
-    background-color:#fb0000; } }
+    height:165px;
+    background-color:#620000; } }
   .bar:nth-child(50){
-    height:159px;
-    background-color:#050000;
+    height:171px;
+    background-color:#9b0000;
     -webkit-animation:X 1s linear infinite alternate;
             animation:X 1s linear infinite alternate; }
 
 @-webkit-keyframes X{
   to{
-    height:83px;
-    background-color:#560000; } }
+    height:44px;
+    background-color:#ab0000; } }
 
 @keyframes X{
   to{
-    height:83px;
-    background-color:#560000; } }
+    height:44px;
+    background-color:#ab0000; } }
