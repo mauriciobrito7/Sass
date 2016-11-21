@@ -1,0 +1,61 @@
+/* 
+  map-get($map,$key)
+  map-keys($map);
+  map-values($map);
+  map-has-key($map,$key)
+  map-merge($map1,$map2)
+*/
+
+$map1: (
+  k1: v1,
+  k2: v2
+);
+
+$map2: (
+  k-1: v-1,
+  k-2: v-2
+);
+
+$map3: map-merge($map1,$map2);
+
+.map {
+  map-merge: inspect($map3);
+  map-keys: map-keys($map3);
+  map-values: map-values($map3);
+}
+
+@function em($el,$parent:16px){
+  @return ($el / $parent) * 1em;
+}
+
+
+// Ejemplo map-has-key
+$breakpoints: (
+  small: em(360px),
+  medium: em(768px),
+  large: em(1024px),
+  x-large: em(1400px)
+);
+
+@mixin from($breakpoint){
+  @if map-has-key($breakpoints,$breakpoint){
+    @media screen and (min-width: map-get($breakpoints,$breakpoint)){
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $breakpoint) {
+      @content;
+    }
+  }
+}
+
+.box {
+  color: red;
+  @include from(large) {
+    color: yellow;
+  }
+
+  @include from(em(525px)){
+    color: green;
+  }
+}

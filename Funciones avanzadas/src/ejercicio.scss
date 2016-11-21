@@ -1,0 +1,36 @@
+body {
+  background-color: #111;
+}
+
+$height: 200;
+@function randomColor(){
+  @return rgb(random(255),0,0);
+}
+
+
+.bars {
+  display: flex;
+  width: 90%;
+  margin: 5em auto 0;
+  align-items: flex-end;
+  height: $height * 1px;
+}
+
+.bar {
+  flex: auto;
+  border: 1px solid rgba(#fff,.3);
+  @for $i from 1 through 50 {
+    &:nth-child(#{$i}){
+      $unique-id: unique-id();
+      height: random($height) * 1px;
+      background-color: randomColor();
+      animation: $unique-id 1s linear infinite alternate;
+      @keyframes #{$unique-id} {
+        to {
+          height: random($height) * 1px;
+          background-color: randomColor();
+        }
+      }
+    }
+  }
+}

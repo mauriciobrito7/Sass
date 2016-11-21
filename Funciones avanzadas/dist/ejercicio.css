@@ -1,0 +1,769 @@
+body{
+  background-color:#111; }
+
+.bars{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  width:90%;
+  margin:5em auto 0;
+  -webkit-box-align:end;
+      -ms-flex-align:end;
+          align-items:flex-end;
+  height:200px; }
+
+.bar{
+  -webkit-box-flex:1;
+      -ms-flex:auto;
+          flex:auto;
+  border:1px solid hsla(0,0%,100%,.3); }
+  .bar:nth-child(1){
+    height:174px;
+    background-color:#970000;
+    -webkit-animation:a 1s linear infinite alternate;
+            animation:a 1s linear infinite alternate; }
+
+@-webkit-keyframes a{
+  to{
+    height:106px;
+    background-color:#970000; } }
+
+@keyframes a{
+  to{
+    height:106px;
+    background-color:#970000; } }
+  .bar:nth-child(2){
+    height:16px;
+    background-color:#8a0000;
+    -webkit-animation:b 1s linear infinite alternate;
+            animation:b 1s linear infinite alternate; }
+
+@-webkit-keyframes b{
+  to{
+    height:124px;
+    background-color:#160000; } }
+
+@keyframes b{
+  to{
+    height:124px;
+    background-color:#160000; } }
+  .bar:nth-child(3){
+    height:115px;
+    background-color:#9a0000;
+    -webkit-animation:c 1s linear infinite alternate;
+            animation:c 1s linear infinite alternate; }
+
+@-webkit-keyframes c{
+  to{
+    height:100px;
+    background-color:#b90000; } }
+
+@keyframes c{
+  to{
+    height:100px;
+    background-color:#b90000; } }
+  .bar:nth-child(4){
+    height:19px;
+    background-color:#580000;
+    -webkit-animation:d 1s linear infinite alternate;
+            animation:d 1s linear infinite alternate; }
+
+@-webkit-keyframes d{
+  to{
+    height:119px;
+    background-color:#ea0000; } }
+
+@keyframes d{
+  to{
+    height:119px;
+    background-color:#ea0000; } }
+  .bar:nth-child(5){
+    height:58px;
+    background-color:#e00000;
+    -webkit-animation:e 1s linear infinite alternate;
+            animation:e 1s linear infinite alternate; }
+
+@-webkit-keyframes e{
+  to{
+    height:13px;
+    background-color:#520000; } }
+
+@keyframes e{
+  to{
+    height:13px;
+    background-color:#520000; } }
+  .bar:nth-child(6){
+    height:107px;
+    background-color:#030000;
+    -webkit-animation:f 1s linear infinite alternate;
+            animation:f 1s linear infinite alternate; }
+
+@-webkit-keyframes f{
+  to{
+    height:12px;
+    background-color:#4e0000; } }
+
+@keyframes f{
+  to{
+    height:12px;
+    background-color:#4e0000; } }
+  .bar:nth-child(7){
+    height:85px;
+    background-color:#b10000;
+    -webkit-animation:g 1s linear infinite alternate;
+            animation:g 1s linear infinite alternate; }
+
+@-webkit-keyframes g{
+  to{
+    height:183px;
+    background-color:#210000; } }
+
+@keyframes g{
+  to{
+    height:183px;
+    background-color:#210000; } }
+  .bar:nth-child(8){
+    height:152px;
+    background-color:#0d0000;
+    -webkit-animation:h 1s linear infinite alternate;
+            animation:h 1s linear infinite alternate; }
+
+@-webkit-keyframes h{
+  to{
+    height:102px;
+    background-color:#3f0000; } }
+
+@keyframes h{
+  to{
+    height:102px;
+    background-color:#3f0000; } }
+  .bar:nth-child(9){
+    height:108px;
+    background-color:#0d0000;
+    -webkit-animation:i 1s linear infinite alternate;
+            animation:i 1s linear infinite alternate; }
+
+@-webkit-keyframes i{
+  to{
+    height:174px;
+    background-color:#a70000; } }
+
+@keyframes i{
+  to{
+    height:174px;
+    background-color:#a70000; } }
+  .bar:nth-child(10){
+    height:123px;
+    background-color:#300000;
+    -webkit-animation:j 1s linear infinite alternate;
+            animation:j 1s linear infinite alternate; }
+
+@-webkit-keyframes j{
+  to{
+    height:143px;
+    background-color:#6f0000; } }
+
+@keyframes j{
+  to{
+    height:143px;
+    background-color:#6f0000; } }
+  .bar:nth-child(11){
+    height:15px;
+    background-color:#6f0000;
+    -webkit-animation:k 1s linear infinite alternate;
+            animation:k 1s linear infinite alternate; }
+
+@-webkit-keyframes k{
+  to{
+    height:56px;
+    background-color:#310000; } }
+
+@keyframes k{
+  to{
+    height:56px;
+    background-color:#310000; } }
+  .bar:nth-child(12){
+    height:1px;
+    background-color:#2b0000;
+    -webkit-animation:l 1s linear infinite alternate;
+            animation:l 1s linear infinite alternate; }
+
+@-webkit-keyframes l{
+  to{
+    height:99px;
+    background-color:#b30000; } }
+
+@keyframes l{
+  to{
+    height:99px;
+    background-color:#b30000; } }
+  .bar:nth-child(13){
+    height:9px;
+    background-color:#4b0000;
+    -webkit-animation:m 1s linear infinite alternate;
+            animation:m 1s linear infinite alternate; }
+
+@-webkit-keyframes m{
+  to{
+    height:45px;
+    background-color:#e40000; } }
+
+@keyframes m{
+  to{
+    height:45px;
+    background-color:#e40000; } }
+  .bar:nth-child(14){
+    height:115px;
+    background-color:#680000;
+    -webkit-animation:n 1s linear infinite alternate;
+            animation:n 1s linear infinite alternate; }
+
+@-webkit-keyframes n{
+  to{
+    height:20px;
+    background-color:#de0000; } }
+
+@keyframes n{
+  to{
+    height:20px;
+    background-color:#de0000; } }
+  .bar:nth-child(15){
+    height:49px;
+    background-color:#950000;
+    -webkit-animation:o 1s linear infinite alternate;
+            animation:o 1s linear infinite alternate; }
+
+@-webkit-keyframes o{
+  to{
+    height:80px;
+    background-color:#6f0000; } }
+
+@keyframes o{
+  to{
+    height:80px;
+    background-color:#6f0000; } }
+  .bar:nth-child(16){
+    height:29px;
+    background-color:#f30000;
+    -webkit-animation:p 1s linear infinite alternate;
+            animation:p 1s linear infinite alternate; }
+
+@-webkit-keyframes p{
+  to{
+    height:88px;
+    background-color:#900; } }
+
+@keyframes p{
+  to{
+    height:88px;
+    background-color:#900; } }
+  .bar:nth-child(17){
+    height:169px;
+    background-color:#900000;
+    -webkit-animation:q 1s linear infinite alternate;
+            animation:q 1s linear infinite alternate; }
+
+@-webkit-keyframes q{
+  to{
+    height:137px;
+    background-color:#cd0000; } }
+
+@keyframes q{
+  to{
+    height:137px;
+    background-color:#cd0000; } }
+  .bar:nth-child(18){
+    height:174px;
+    background-color:#9f0000;
+    -webkit-animation:r 1s linear infinite alternate;
+            animation:r 1s linear infinite alternate; }
+
+@-webkit-keyframes r{
+  to{
+    height:78px;
+    background-color:#080000; } }
+
+@keyframes r{
+  to{
+    height:78px;
+    background-color:#080000; } }
+  .bar:nth-child(19){
+    height:129px;
+    background-color:#610000;
+    -webkit-animation:s 1s linear infinite alternate;
+            animation:s 1s linear infinite alternate; }
+
+@-webkit-keyframes s{
+  to{
+    height:42px;
+    background-color:#b50000; } }
+
+@keyframes s{
+  to{
+    height:42px;
+    background-color:#b50000; } }
+  .bar:nth-child(20){
+    height:172px;
+    background-color:#8d0000;
+    -webkit-animation:t 1s linear infinite alternate;
+            animation:t 1s linear infinite alternate; }
+
+@-webkit-keyframes t{
+  to{
+    height:60px;
+    background-color:#8d0000; } }
+
+@keyframes t{
+  to{
+    height:60px;
+    background-color:#8d0000; } }
+  .bar:nth-child(21){
+    height:168px;
+    background-color:#f20000;
+    -webkit-animation:u 1s linear infinite alternate;
+            animation:u 1s linear infinite alternate; }
+
+@-webkit-keyframes u{
+  to{
+    height:7px;
+    background-color:#300000; } }
+
+@keyframes u{
+  to{
+    height:7px;
+    background-color:#300000; } }
+  .bar:nth-child(22){
+    height:157px;
+    background-color:#1d0000;
+    -webkit-animation:v 1s linear infinite alternate;
+            animation:v 1s linear infinite alternate; }
+
+@-webkit-keyframes v{
+  to{
+    height:157px;
+    background-color:#890000; } }
+
+@keyframes v{
+  to{
+    height:157px;
+    background-color:#890000; } }
+  .bar:nth-child(23){
+    height:166px;
+    background-color:#d30000;
+    -webkit-animation:w 1s linear infinite alternate;
+            animation:w 1s linear infinite alternate; }
+
+@-webkit-keyframes w{
+  to{
+    height:133px;
+    background-color:#3c0000; } }
+
+@keyframes w{
+  to{
+    height:133px;
+    background-color:#3c0000; } }
+  .bar:nth-child(24){
+    height:42px;
+    background-color:#1a0000;
+    -webkit-animation:x 1s linear infinite alternate;
+            animation:x 1s linear infinite alternate; }
+
+@-webkit-keyframes x{
+  to{
+    height:56px;
+    background-color:#170000; } }
+
+@keyframes x{
+  to{
+    height:56px;
+    background-color:#170000; } }
+  .bar:nth-child(25){
+    height:154px;
+    background-color:#f90000;
+    -webkit-animation:y 1s linear infinite alternate;
+            animation:y 1s linear infinite alternate; }
+
+@-webkit-keyframes y{
+  to{
+    height:85px;
+    background-color:#910000; } }
+
+@keyframes y{
+  to{
+    height:85px;
+    background-color:#910000; } }
+  .bar:nth-child(26){
+    height:27px;
+    background-color:#2b0000;
+    -webkit-animation:z 1s linear infinite alternate;
+            animation:z 1s linear infinite alternate; }
+
+@-webkit-keyframes z{
+  to{
+    height:84px;
+    background-color:#700000; } }
+
+@keyframes z{
+  to{
+    height:84px;
+    background-color:#700000; } }
+  .bar:nth-child(27){
+    height:161px;
+    background-color:#360000;
+    -webkit-animation:A 1s linear infinite alternate;
+            animation:A 1s linear infinite alternate; }
+
+@-webkit-keyframes A{
+  to{
+    height:77px;
+    background-color:#dc0000; } }
+
+@keyframes A{
+  to{
+    height:77px;
+    background-color:#dc0000; } }
+  .bar:nth-child(28){
+    height:89px;
+    background-color:#190000;
+    -webkit-animation:B 1s linear infinite alternate;
+            animation:B 1s linear infinite alternate; }
+
+@-webkit-keyframes B{
+  to{
+    height:64px;
+    background-color:#1d0000; } }
+
+@keyframes B{
+  to{
+    height:64px;
+    background-color:#1d0000; } }
+  .bar:nth-child(29){
+    height:43px;
+    background-color:#020000;
+    -webkit-animation:C 1s linear infinite alternate;
+            animation:C 1s linear infinite alternate; }
+
+@-webkit-keyframes C{
+  to{
+    height:163px;
+    background-color:#490000; } }
+
+@keyframes C{
+  to{
+    height:163px;
+    background-color:#490000; } }
+  .bar:nth-child(30){
+    height:61px;
+    background-color:#520000;
+    -webkit-animation:D 1s linear infinite alternate;
+            animation:D 1s linear infinite alternate; }
+
+@-webkit-keyframes D{
+  to{
+    height:59px;
+    background-color:#2b0000; } }
+
+@keyframes D{
+  to{
+    height:59px;
+    background-color:#2b0000; } }
+  .bar:nth-child(31){
+    height:180px;
+    background-color:#e00000;
+    -webkit-animation:E 1s linear infinite alternate;
+            animation:E 1s linear infinite alternate; }
+
+@-webkit-keyframes E{
+  to{
+    height:58px;
+    background-color:#850000; } }
+
+@keyframes E{
+  to{
+    height:58px;
+    background-color:#850000; } }
+  .bar:nth-child(32){
+    height:57px;
+    background-color:#b80000;
+    -webkit-animation:F 1s linear infinite alternate;
+            animation:F 1s linear infinite alternate; }
+
+@-webkit-keyframes F{
+  to{
+    height:7px;
+    background-color:#980000; } }
+
+@keyframes F{
+  to{
+    height:7px;
+    background-color:#980000; } }
+  .bar:nth-child(33){
+    height:171px;
+    background-color:#370000;
+    -webkit-animation:G 1s linear infinite alternate;
+            animation:G 1s linear infinite alternate; }
+
+@-webkit-keyframes G{
+  to{
+    height:77px;
+    background-color:#7f0000; } }
+
+@keyframes G{
+  to{
+    height:77px;
+    background-color:#7f0000; } }
+  .bar:nth-child(34){
+    height:54px;
+    background-color:#f00000;
+    -webkit-animation:H 1s linear infinite alternate;
+            animation:H 1s linear infinite alternate; }
+
+@-webkit-keyframes H{
+  to{
+    height:86px;
+    background-color:#d60000; } }
+
+@keyframes H{
+  to{
+    height:86px;
+    background-color:#d60000; } }
+  .bar:nth-child(35){
+    height:20px;
+    background-color:#830000;
+    -webkit-animation:I 1s linear infinite alternate;
+            animation:I 1s linear infinite alternate; }
+
+@-webkit-keyframes I{
+  to{
+    height:105px;
+    background-color:#2a0000; } }
+
+@keyframes I{
+  to{
+    height:105px;
+    background-color:#2a0000; } }
+  .bar:nth-child(36){
+    height:80px;
+    background-color:#470000;
+    -webkit-animation:J 1s linear infinite alternate;
+            animation:J 1s linear infinite alternate; }
+
+@-webkit-keyframes J{
+  to{
+    height:135px;
+    background-color:#ba0000; } }
+
+@keyframes J{
+  to{
+    height:135px;
+    background-color:#ba0000; } }
+  .bar:nth-child(37){
+    height:16px;
+    background-color:#9c0000;
+    -webkit-animation:K 1s linear infinite alternate;
+            animation:K 1s linear infinite alternate; }
+
+@-webkit-keyframes K{
+  to{
+    height:67px;
+    background-color:#3b0000; } }
+
+@keyframes K{
+  to{
+    height:67px;
+    background-color:#3b0000; } }
+  .bar:nth-child(38){
+    height:46px;
+    background-color:#4d0000;
+    -webkit-animation:L 1s linear infinite alternate;
+            animation:L 1s linear infinite alternate; }
+
+@-webkit-keyframes L{
+  to{
+    height:108px;
+    background-color:#d00; } }
+
+@keyframes L{
+  to{
+    height:108px;
+    background-color:#d00; } }
+  .bar:nth-child(39){
+    height:184px;
+    background-color:#830000;
+    -webkit-animation:M 1s linear infinite alternate;
+            animation:M 1s linear infinite alternate; }
+
+@-webkit-keyframes M{
+  to{
+    height:16px;
+    background-color:#520000; } }
+
+@keyframes M{
+  to{
+    height:16px;
+    background-color:#520000; } }
+  .bar:nth-child(40){
+    height:54px;
+    background-color:#1f0000;
+    -webkit-animation:N 1s linear infinite alternate;
+            animation:N 1s linear infinite alternate; }
+
+@-webkit-keyframes N{
+  to{
+    height:183px;
+    background-color:#720000; } }
+
+@keyframes N{
+  to{
+    height:183px;
+    background-color:#720000; } }
+  .bar:nth-child(41){
+    height:21px;
+    background-color:#a40000;
+    -webkit-animation:O 1s linear infinite alternate;
+            animation:O 1s linear infinite alternate; }
+
+@-webkit-keyframes O{
+  to{
+    height:189px;
+    background-color:#9d0000; } }
+
+@keyframes O{
+  to{
+    height:189px;
+    background-color:#9d0000; } }
+  .bar:nth-child(42){
+    height:186px;
+    background-color:#510000;
+    -webkit-animation:P 1s linear infinite alternate;
+            animation:P 1s linear infinite alternate; }
+
+@-webkit-keyframes P{
+  to{
+    height:196px;
+    background-color:#de0000; } }
+
+@keyframes P{
+  to{
+    height:196px;
+    background-color:#de0000; } }
+  .bar:nth-child(43){
+    height:12px;
+    background-color:#5b0000;
+    -webkit-animation:Q 1s linear infinite alternate;
+            animation:Q 1s linear infinite alternate; }
+
+@-webkit-keyframes Q{
+  to{
+    height:128px;
+    background-color:#f60000; } }
+
+@keyframes Q{
+  to{
+    height:128px;
+    background-color:#f60000; } }
+  .bar:nth-child(44){
+    height:178px;
+    background-color:#910000;
+    -webkit-animation:R 1s linear infinite alternate;
+            animation:R 1s linear infinite alternate; }
+
+@-webkit-keyframes R{
+  to{
+    height:122px;
+    background-color:#4b0000; } }
+
+@keyframes R{
+  to{
+    height:122px;
+    background-color:#4b0000; } }
+  .bar:nth-child(45){
+    height:9px;
+    background-color:#9c0000;
+    -webkit-animation:S 1s linear infinite alternate;
+            animation:S 1s linear infinite alternate; }
+
+@-webkit-keyframes S{
+  to{
+    height:177px;
+    background-color:#650000; } }
+
+@keyframes S{
+  to{
+    height:177px;
+    background-color:#650000; } }
+  .bar:nth-child(46){
+    height:54px;
+    background-color:#3c0000;
+    -webkit-animation:T 1s linear infinite alternate;
+            animation:T 1s linear infinite alternate; }
+
+@-webkit-keyframes T{
+  to{
+    height:7px;
+    background-color:#d20000; } }
+
+@keyframes T{
+  to{
+    height:7px;
+    background-color:#d20000; } }
+  .bar:nth-child(47){
+    height:33px;
+    background-color:#2c0000;
+    -webkit-animation:U 1s linear infinite alternate;
+            animation:U 1s linear infinite alternate; }
+
+@-webkit-keyframes U{
+  to{
+    height:12px;
+    background-color:#ae0000; } }
+
+@keyframes U{
+  to{
+    height:12px;
+    background-color:#ae0000; } }
+  .bar:nth-child(48){
+    height:23px;
+    background-color:#020000;
+    -webkit-animation:V 1s linear infinite alternate;
+            animation:V 1s linear infinite alternate; }
+
+@-webkit-keyframes V{
+  to{
+    height:10px;
+    background-color:#080000; } }
+
+@keyframes V{
+  to{
+    height:10px;
+    background-color:#080000; } }
+  .bar:nth-child(49){
+    height:29px;
+    background-color:#c20000;
+    -webkit-animation:W 1s linear infinite alternate;
+            animation:W 1s linear infinite alternate; }
+
+@-webkit-keyframes W{
+  to{
+    height:75px;
+    background-color:#7f0000; } }
+
+@keyframes W{
+  to{
+    height:75px;
+    background-color:#7f0000; } }
+  .bar:nth-child(50){
+    height:82px;
+    background-color:#1e0000;
+    -webkit-animation:X 1s linear infinite alternate;
+            animation:X 1s linear infinite alternate; }
+
+@-webkit-keyframes X{
+  to{
+    height:154px;
+    background-color:#b60000; } }
+
+@keyframes X{
+  to{
+    height:154px;
+    background-color:#b60000; } }

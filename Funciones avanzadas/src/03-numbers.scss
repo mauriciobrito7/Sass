@@ -1,0 +1,27 @@
+/* 
+  round() redondeo dinamico
+  percentage()
+
+  floor(number) redondea hacia abajo
+  ceil(number) redondea hacia arriba
+
+  // Nota: max y min no reciben listas como parametros
+    max(numbers...)
+    min(numbers...)
+
+  // devuelve el valor absoluto (sin signo)
+    abs(number) 
+
+  random([limite])
+
+*/
+
+$numbers: 1,2,3,4,5;
+div {
+  // width: max(1,2,3,4,5);
+  width: max(nth($numbers, 1), nth($numbers, 4));
+  abs: abs(-10);
+  random: random();
+  random-n: random(100);
+}
+

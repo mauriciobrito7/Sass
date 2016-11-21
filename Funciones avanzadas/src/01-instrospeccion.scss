@@ -1,0 +1,31 @@
+// Introspeccion
+// type-of()
+// unit()
+// unitless()
+// inspect()
+// las siguientes evaluan si existen
+// las variables, funciones o mixins
+// y devuelven un boolean
+  // variable-exists(variable)
+  // function-exists(funcionName)
+  // mixin-exists(mixinName)
+// call(funcion,args...)
+  // Ejecuta una funcion
+
+$var: 20px;
+$map: (
+  k1: v1,
+  k2: v2,
+);
+
+@function double($val){
+  @return $val * 2;
+}
+
+.inspect {
+  value: inspect($map);
+  variable-exists: variable-exists(map);
+  function-exists: function-exists(double);
+  /*Otra forma de ejecutar una función*/
+  width: call(double,15px);
+}

@@ -1,0 +1,4 @@
+.lists{
+  join:red green blue "a" "b" "c";
+  colors:red green blue #ff0;
+  colors-letters:"b"; }
