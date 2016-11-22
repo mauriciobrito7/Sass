@@ -1,0 +1,26 @@
+.course-card{
+	margin-top: $gutter*2;
+	margin-left: $gutter;
+	margin-right: $gutter; 
+	&__img{
+		width: 100%;
+		display: block;
+		background: color(mountain);
+		height: 300px;
+		&__title{
+			color:color(white);
+			text-align: center;
+		}
+	}
+	&__footer{
+		background: color(navy);
+		height: em(50px);
+		width: 100%;
+		color: color(white);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 1em;
+
+	}
+}

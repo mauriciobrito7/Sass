@@ -1,0 +1,39 @@
+*{
+	box-sizing:border-box;
+	margin:0;
+}
+
+body{
+	font-family: $main-font;
+	font-size: $font-size;
+	margin-top:5em;
+}
+
+h1{
+	font-size:$h1-size;
+}
+h2{
+	font-size:$h2-size;
+}
+h3{
+	font-size:$h3-size;
+}
+
+h1,h2,h3{
+	line-height: 1.3sem;
+	font-weight: $light;
+}
+img{
+	max-width:100%;
+}
+
+a{
+	text-decoration:none;
+}
+label, input, textarea{
+	display:block;
+}
+
+main{
+	padding-bottom: 4em;
+}

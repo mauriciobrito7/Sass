@@ -1,0 +1,45 @@
+//Aqui se guardaran las variables
+
+//Importar tipografia
+/*Ubuntu*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400');
+/*Kaushan*/
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin-ext');
+//Fuentes
+$main-font: 'Ubuntu', sans-serif;
+$logo-font:	'Kaushan Script', cursive;
+$light:300;
+$normal:400;
+
+//Gutter
+$gutter:1em;
+
+//Convertir px a em
+@function em($el, $parent: 16px){
+	@return ($el/$parent)*1em;
+}
+
+//Convertir px a rem
+@function rem($el, $parent: 16px){
+	@return ($el/$parent)*1rem;
+}
+
+$font-size:em(16px);
+$h3-size: $font-size * 1.15;
+$h2-size: $font-size * 1.35;
+$h1-size: $font-size * 1.7;
+
+//Colores
+$colors:(
+	rojo: #F22613,
+	coral: #E14658,
+	navy: #22252C,
+	mountain: #3F3250,
+	scrub: #C0B3A0,
+	white: #ffffff,
+	black: #111111
+);
+
+@function color($color){
+	@return map-get($colors,$color);
+}

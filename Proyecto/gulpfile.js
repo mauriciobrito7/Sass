@@ -31,7 +31,7 @@ let postCssPlugins=[
 
 		//Es la carpeta base donde va a buscar
 		//'../assets/img/v.jpg'//
-		basePath:'dist/assets',
+		basePath:'assets',
 		/*Añade los cambios de cache de los recursos cacheados*/
 		cachebuster:true
 		/*Detecta si se le hecieron cambios al recurso porque lee los metadatos
@@ -44,7 +44,7 @@ gulp.task('styles', ()=>{
 	gulp.src('./src/*.scss')
 	.pipe(sass().on('error', sass.logError))//tarea sass
 	.pipe(postCss(postCssPlugins))//tarea postcss
-	.pipe(gulp.dest('./dist'))
+	.pipe(gulp.dest('./css'))
 	.pipe(browserSync.stream());
 });
 

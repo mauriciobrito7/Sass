@@ -1,0 +1,13 @@
+.main-header{
+	background: color(scrub);
+	color:color(navy);
+	display: flex;
+	padding: 0 $gutter;
+	height: rem(50px);
+	width: 100%;
+	align-items: center;
+	font-size: 1.2em;
+	position: fixed;
+	z-index: 2;
+	top:0;
+}

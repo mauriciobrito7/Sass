@@ -1,1 +1,49 @@
 //Inicio de sesión
+.login-page{
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	align-items:center;
+	background-color: color(mountain);
+}
+.main-home{
+	margin-top:-80px;
+}
+
+.logo{
+	width: em(332px /2);
+	display:block;
+	font-family: $logo-font;
+	font-size: 3em;
+	margin: 0 auto;
+	text-align: center;
+	color: color(white);
+}
+
+.login-form{
+	width: em(560px/2);
+	margin: 2em auto;
+	&__item{
+		position: relative;
+		margin-bottom: 1em;
+	}
+	&__input{
+		width: 100%;
+		height: 2.5em;
+		line-height: 1.5em;
+	}
+	&__label{
+		position: absolute;
+		line-height: 2.2em;
+		left: 2%;
+		font-size: .9em;
+	}
+}
+
+.reset-password{
+	text-align: center;
+	color: color(white);
+	a{
+		color:color(rojo);
+	}
+}
