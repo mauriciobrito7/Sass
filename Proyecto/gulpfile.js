@@ -31,7 +31,7 @@ let postCssPlugins=[
 
 		//Es la carpeta base donde va a buscar
 		//'../assets/img/v.jpg'//
-		basePath:'assets',
+		basePath:'img',
 		/*Añade los cambios de cache de los recursos cacheados*/
 		cachebuster:true
 		/*Detecta si se le hecieron cambios al recurso porque lee los metadatos
