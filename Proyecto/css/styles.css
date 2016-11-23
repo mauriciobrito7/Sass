@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400");
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin-ext");
 .main-header{
-  background:#c0b3a0;
+  background:#3f3250;
   color:#fff;
   display:-webkit-box;
   display:-ms-flexbox;
@@ -77,31 +77,51 @@ main{
   margin-top:2em;
   margin-left:1em;
   margin-right:1em;
+  height:200px;
   background:#fff;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
   box-shadow:0 5px 8px 0 rgba(0,0,0,.75);
   border-top:1px solid #ccc;
   border-radius:2px; }
-  .course-card:hover .course-card__img{
-    -webkit-transition:all .1s ease-in;
-    transition:all .1s ease-in;
-    border-bottom:4px solid #e14658; }
+  .course-card:hover .course-card__info__title{
+    color:#e14658; }
   .course-card:hover img{
     -webkit-transition:all .4s ease-in;
     transition:all .4s ease-in;
-    -webkit-filter:saturate(3);
-            filter:saturate(3); }
+    -webkit-filter:saturate(5);
+            filter:saturate(5); }
   .course-card__img{
-    width:98%;
-    margin:0 auto;
+    width:48%;
     padding-top:1%;
+    padding-bottom:1%;
+    margin:0 auto;
     display:block;
-    height:300px; }
+    height:100%; }
     .course-card__img img{
       width:100%;
       height:100%; }
+  .course-card__info{
+    height:100%;
+    width:48%;
+    padding-bottom:1%;
+    padding-top:1%;
+    margin:0 auto; }
+    .course-card__info__title{
+      text-align:center;
+      margin:.3em auto;
+      font-weight:400;
+      color:#22252c; }
+    .course-card__info__text{
+      max-width:100%;
+      text-align:justify;
+      font-weight:300;
+      line-height:1.5em; }
   .course-card__footer{
-    background:-webkit-linear-gradient(left,#22252c,#3f3250);
-    background:linear-gradient(left,#22252c,#3f3250);
+    background:#22252c;
     height:5em;
     width:100%;
     color:#fff;

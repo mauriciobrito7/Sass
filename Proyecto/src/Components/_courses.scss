@@ -2,35 +2,60 @@
 	margin-top: $gutter*2;
 	margin-left: $gutter;
 	margin-right: $gutter;
+	height: 200px;
 	background: color(white);
+	display: flex;
+	flex-wrap: wrap;
 	-webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
 box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
 	border-top:1px solid #ccc;
 	border-radius: 2px;
-	&:hover{		
-		.course-card__img{
-			transition: all .1s ease-in;
-			border-bottom:4px solid color(coral);
+	
+	&:hover{
+		.course-card__info__title{
+			color:color(coral);
 		}
 		img{
 			transition: all .4s ease-in;
-			filter:saturate(3);
+			filter:saturate(5);
 		}
-	} 
+	}
+
 	&__img{
-		width: 98%;
-		margin:0 auto;
-		padding-top:1%;		
+		width: 48%;
+		padding-top:1%;
+		padding-bottom: 1%;	
+		margin:0 auto;	
 		display: block;
-		height: 300px;
+		height: 100%;
+		
 		img{
 			width: 100%;
 			height: 100%;
 		}
 	}
+	&__info{
+		height: 100%;
+		width: 48%;
+		padding-bottom: 1%;	
+		padding-top:1%;			
+		margin: 0 auto;
+		&__title{
+			text-align: center;
+			margin: 0.3em auto;
+			font-weight: $normal;
+			color:color(navy);
+		}
+		&__text{
+			max-width: 100%;
+			text-align: justify;
+			font-weight: $light;
+			line-height: 1.5em
+		}
+	}
 	&__footer{
-		background: linear-gradient(left, color(navy), color(mountain));
+		background: color(navy);
 		height: em(80px);
 		width: 100%;
 		color: color(white);
