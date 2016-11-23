@@ -2,20 +2,25 @@
 	margin-top: $gutter*2;
 	margin-left: $gutter;
 	margin-right: $gutter;
-	background: rgba(color(mountain),0.3);
+	background: color(navy);
 	-webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
 box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
 	border-radius: 2px;
-	&:hover{
-		border-bottom:2px solid color(coral);
-		cursor:pointer
+	&:hover{		
+		.course-card__img{
+			transition: all .1s ease-in;
+			border-bottom:4px solid color(coral);
+		}
+		img{
+			transition: all .4s ease-in;
+			filter:saturate(3);
+		}
 	} 
 	&__img{
-		width: 96%;
+		width: 98%;
 		margin:0 auto;
-		padding-top:2%;
-		padding-bottom:2%;
+		padding-top:1%;		
 		display: block;
 		height: 300px;
 		img{
@@ -24,7 +29,7 @@ box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
 		}
 	}
 	&__footer{
-		background: color(mountain);
+		background: linear-gradient(left, color(navy), color(mountain));
 		height: em(80px);
 		width: 100%;
 		color: color(white);
